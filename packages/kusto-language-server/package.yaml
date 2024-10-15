@@ -1,0 +1,10 @@
+source:
+  # renovate:datasource=github-tags
+  id: pkg:github/kuskus/tree/master/kusto-language-server
+  build:
+    run: |
+      npm install
+      npm run vscode:prepublish
+
+bin:
+  kusto-language-server: node:server/out/server.js --stdio
