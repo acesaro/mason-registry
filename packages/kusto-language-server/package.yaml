@@ -1,4 +1,4 @@
-name: latexindent
+name: kusto-language-server
 description: kusto-language-server
 homepage: https://github.com/rosshamish/kuskus/tree/master/kusto-language-server
 licenses:
