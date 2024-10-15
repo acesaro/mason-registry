@@ -1,6 +1,18 @@
+name: latexindent
+description: kusto-language-server
+homepage: https://github.com/rosshamish/kuskus/tree/master/kusto-language-server
+licenses:
+  - GPL-3.0-or-later
+languages:
+  - kusto
+categories:
+  - Formatter
+  - LSP
+  - Linter
+
 source:
   # renovate:datasource=github-tags
-  id: pkg:github/kuskus/tree/master/kusto-language-server
+  id: pkg:github/rosshamish/kuskus/tree/master/kusto-language-server
   build:
     run: |
       npm install
