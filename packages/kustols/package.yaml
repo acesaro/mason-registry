@@ -1,0 +1,21 @@
+name: kustols
+description: kusto-language-server
+homepage: https://github.com/acesaro/kuskus/tree/master/kusto-language-server
+licenses:
+  - GPL-3.0-or-later
+languages:
+  - kusto
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=github-tags
+  id: pkg:github/acesaro/kuskus
+  build:
+    run: |
+      cd kusto-language-server
+      npm install
+      npm run vscode:prepublish
+
+bin:
+  kustols: node:kusto-language-server/server/out/server.js
