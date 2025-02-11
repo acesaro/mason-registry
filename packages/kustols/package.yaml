@@ -9,7 +9,6 @@ categories:
   - LSP
 
 source:
-  # Adding comment to trigger release
   # renovate:datasource=github-tags
   id: pkg:github/acesaro/kuskus
   build:
@@ -20,4 +19,3 @@ source:
 
 bin:
   kustols: node:kusto-language-server/server/out/server.js
-
